@@ -1,0 +1,35 @@
+{
+  "name": "ozmap-isp-integration-assignament",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegoschaidhauer/ozmap-isp-integration-assignament.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/diegoschaidhauer/ozmap-isp-integration-assignament/issues"
+  },
+  "homepage": "https://github.com/diegoschaidhauer/ozmap-isp-integration-assignament#readme",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@ozmap/ozmap-sdk": "^1.1.0",
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "mongoose": "^8.14.1",
+    "winston": "^3.17.0"
+  }
+}
