@@ -7,5 +7,9 @@ export const config = {
   ozmapBaseUrl: process.env.OZMAP_BASE_URL || 'https://api.ozmap.com.br',
   mongoUri: process.env.MONGO_URI || 'mongodb://localhost:27017/ozmap_sync',
   syncIntervalMs: Number(process.env.SYNC_INTERVAL_MS) || 5 * 60 * 1000,
-  simulateOzmap: process.env.SIMULATE_OZMAP === 'true'
+  simulateOzmap: process.env.SIMULATE_OZMAP === 'true',
+  ozmapProjectId: process.env.OZMAP_PROJECT_ID || '',
+  defaultCableTypeId: process.env.OZMAP_DEFAULT_CABLE_TYPE_ID || '',
+  boxTypeId: process.env.OZMAP_BOX_TYPE_ID || '',
+
 };

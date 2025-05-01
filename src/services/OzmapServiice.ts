@@ -20,7 +20,7 @@ export class OzmapService {
       logger.info(`[Simulação] Enviando drop cable ao OZmap: ${JSON.stringify(dropCableData)}`);
       return;
     }
-    // Drop cable é um cabo com isDrop: true e kind: 'Drop', mas usa o mesmo endpoint
+   
     await client.cable.create(dropCableData);
   }
 
@@ -37,7 +37,7 @@ export class OzmapService {
       logger.info(`[Simulação] Enviando cliente ao OZmap (como pop): ${JSON.stringify(customerData)}`);
       return;
     }
-    // Enviando como "pop" pois não existe customer.create no SDK
+   
     await client.pop.create(customerData);
   }
 }
