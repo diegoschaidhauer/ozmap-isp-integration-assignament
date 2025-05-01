@@ -1,4 +1,17 @@
-import dotenv from 'dotenv';
-dotenv.config();
+import { connectDatabase } from './database';
 
-console.log('Hello Ozmap');
+import { config } from './config';
+import { logger } from './utils/logger';
+
+async function main() {
+  await connectDatabase();
+
+
+
+  setInterval(() => {
+    logger.info('Iniciando nova sincronização...');
+    
+  }, config.syncIntervalMs);
+}
+
+main();
